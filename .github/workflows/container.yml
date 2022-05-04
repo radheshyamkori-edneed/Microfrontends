@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: check configs
-        runs: |
+        run: |
           cd ${{ env.working-directory}} 
           rm -rf node_modules package-lock.json
           npm install
