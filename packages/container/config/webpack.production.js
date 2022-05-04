@@ -9,6 +9,7 @@ const productionConfig = {
     mode: 'production',
     output: {
         filename: '[name].[contenthash].js',
+        // publicPath: 'container/latest/', // assign this path after configuring in AWS bucket & cloudfront
     },
     plugins: [
         new ModuleFederationPlugin({
